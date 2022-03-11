@@ -5,11 +5,11 @@ namespace ConsoleUI
 {
     public class Program
     {
-        static TableServers host1List = new TableServers();
-        static TableServers host2List = new TableServers();
+        static TableServers host1List = TableServers.GetTabelServers();
+        static TableServers host2List = TableServers.GetTabelServers();
         static void Main(string[] args)
         {
-            TableServers servers = new TableServers();
+            TableServers servers = TableServers.GetTabelServers();
 
             for (int i = 0; i < 5; i++)
             {
